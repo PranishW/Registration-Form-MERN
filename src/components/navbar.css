@@ -1,0 +1,49 @@
+nav{
+    background-color: #3A4750;
+    height:5rem;
+    color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    margin-left: 10rem;
+    font-size: 3rem;
+    align-self: center;
+}
+#button{
+    margin-right: 9rem;
+    align-self: flex-end;
+    font-size: x-large;
+}
+.Login{
+    padding-left: 3rem;
+}
+.SignUp{
+    padding-left: 3rem;
+}
+.Login:hover{
+    color: rgb(219, 214, 214);
+    transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.SignUp:hover{
+    color: rgb(219, 214, 214);
+    transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#Home:hover{
+    color: rgb(219, 214, 214);
+    transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+form{
+    display: inline;
+}
+.active{
+    color: rgb(219, 214, 214);
+}
+.Logout{
+    padding-left: 3rem;
+}
+.Logout:hover{
+    color: rgb(219, 214, 214);
+    transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+

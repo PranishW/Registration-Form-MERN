@@ -1,0 +1,84 @@
+.formdetails
+{
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 33rem;
+    margin-left: 31rem;
+    background-color: #3A4750;
+    border-radius: 5%;
+    font-size: large;
+    color: #f9f9f9;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.formhead{
+    margin-top: 4rem;
+}
+.formdisplay{
+    height: 100vh;
+    width: 100vw;
+}
+#age
+{
+    background-color: #f9f9f9;
+    color: #3A4750;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 3rem;
+}
+#dob{
+    background-color: #f9f9f9;
+    color: #3A4750;
+    text-align: center;
+    margin-left: 1rem;
+}
+#address{
+    background-color: #f9f9f9;
+    color: #3A4750;
+    margin-left: 1rem;
+}
+#mobno
+{
+    background-color: #f9f9f9;
+    color: #3A4750;
+    text-align: center;
+    border: 1px solid #3A4750;
+    border-radius: 5px;
+    width: 8rem;
+}
+#textarea{
+    display: flex;
+}
+#mobile-label
+{
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+#label-male{
+    margin-left: 1rem;
+}
+.edit{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 8rem;
+    height: 2rem;
+    background-color: #f9f9f9;
+    color: #3A4750;
+    border-radius: 20px;
+}
+.edit:hover{
+    background-color: rgb(219, 214, 214);
+    transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.info{
+    margin-top: 1rem;
+}
+.minfo
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

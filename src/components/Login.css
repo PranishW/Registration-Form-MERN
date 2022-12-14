@@ -1,0 +1,116 @@
+.loginform{
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 25rem;
+    margin-left: 35.5rem;
+    background-color: #f9f9f9;
+    border-radius: 5%;
+    font-size: large;
+
+}
+.loghead{
+    padding-top: 5rem;
+    color: #f9f9f9;
+}
+.loginpage
+{
+    background-color: #3A4750;
+    height: 100vh;
+    width: 100vw;
+}
+p
+{
+    margin-top: 3rem;
+}
+.email
+{
+    margin-top: 2rem;
+}
+.password
+{
+    margin-top: 2rem;
+}
+#email
+{
+    margin-left: 1rem;
+    height: 2rem;
+    text-align: center;
+    border: 1px solid #3A4750;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #3A4750;
+}
+#password{
+    margin-left: 1.5rem;
+    height: 2rem;
+    text-align: center;
+    border: 1px solid #3A4750;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #3A4750;
+}
+.login{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 8rem;
+    height: 2rem;
+    background-color: #3A4750;
+    border-radius: 20px;
+    color: #f9f9f9;
+}
+.login:hover{
+    color: rgb(219, 214, 214);
+    transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.signup
+{
+    color:#455D7A;
+}
+.signup:hover{
+    color:#273952;
+    transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}  
+#name
+{
+    margin-left: 1rem;
+    height: 2rem;
+    text-align: center;
+    border: 1px solid #3A4750;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #3A4750;
+}
+#cpassword{
+    margin-left: 1.5rem;
+    height: 2rem;
+    text-align: center;
+    border: 1px solid #3A4750;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #3A4750;
+}
+.name
+{
+    margin-top: 2rem;
+}
+.cpassword
+{
+    margin-top: 2rem;
+}
+.sign{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 8rem;
+    height: 2rem;
+    background-color: #3A4750;
+    border-radius: 20px;
+    color: #f9f9f9;
+}
+.sign:hover{
+    color: rgb(219, 214, 214);
+    transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
