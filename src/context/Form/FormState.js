@@ -31,7 +31,7 @@ const FormState = (props) => {
         });
         // filling form info
         const json = await response.json()
-        setForm(form.concat(json))
+        setForm(json)
     }
     return (
         <formContext.Provider value={{ form, fillForm,getForm }}>
