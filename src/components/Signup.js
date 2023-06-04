@@ -20,10 +20,10 @@ const Signup = (props)=>{
             localStorage.setItem('token', json.authtoken)
             history.push("/register")
             props.showAlert("Account Created Successfully","success")
-            const today = new Date()
-            const expiredate = new Date()
-            expiredate.setDate(today.getDate() + 3)
-            document.cookie = `username=${credentials.email}; expires=${expiredate}; path=http://localhost:7000/api/auth/signup`;
+            //const today = new Date()
+            //const expiredate = new Date()
+            //expiredate.setDate(today.getDate() + 3)
+            //document.cookie = `username=${credentials.email}; expires=${expiredate}; path=http://localhost:7000/api/auth/signup`;
         }
         else {
             props.showAlert("Invalid Credentials","danger")

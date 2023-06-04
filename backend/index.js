@@ -5,7 +5,7 @@ const session = require('express-session');
 connectToMongo();
 const app = express()
 const port = 7000
-const secret = process.env.SECRET || "secretyeah";
+const secret = "secretyeah";
 const sessionConfig = {
   secret,
   resave:false,
