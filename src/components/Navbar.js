@@ -1,37 +1,29 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Link, useLocation } from "react-router-dom";
-import './navbar.css'
+import './css/navbar.css'
 const Navbar = () => {
     let history = useHistory()
-    let boollog = true
     const handleLogout = () => {
         localStorage.removeItem('token');
-        document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
         history.push('/login')
     }
     let location = useLocation();
     useEffect(() => {
     }, [location]);
-    let Navlink = () => {
-        if (location.pathname === "/forminfo") {
-        }
-        if (location.pathname === "/register") {
-            boollog = false
-        }
-    }
     return (
         <nav>
-            <h1>eRegistration</h1>
+            <div className="logo">
+                <img className="icon" src="Alecive-Flatwoken-Apps-Google-Drive-Forms.ico" />
+                <h1 className="nav-head">eRegistration</h1>
+            </div>
             <div id="button">
-                {!localStorage.getItem('token') ? <form>
+                {!localStorage.getItem('token') ? <form className="navform">
                     <Link className={`${location.pathname === "/" ? "active" : ""}`} id="Home" to="/">Home</Link>
-                    <Link to="/signup" className="SignUp">SignUp</Link>
-                    <Link to="/login" className="Login">Login</Link>
-                </form> : <form>
-                    {Navlink()}
-                    {boollog ? <Link  className={`${location.pathname === "/forminfo" ? "active" : ""}`} id="Home" to="/forminfo">Details</Link> :
-                    <Link to="/register" className={`${location.pathname === "/register" ? "active" : ""}`} id="Home">Form</Link>}
+                    <Link className={`${location.pathname === "/signup" ? "active" : ""}`} to="/signup" id="Signup" >SignUp</Link>
+                    <Link to="/login" className={`${location.pathname === "/login" ? "active" : ""}`} id="Login">Login</Link>
+                </form> : <form className="navform">
+                    <Link className={`${location.pathname === "/" ? "active" : ""}`} id="Home" to="/">Home</Link>
                     <button onClick={handleLogout} className="Logout" >Logout</button>
                 </form>}
             </div>
@@ -39,3 +31,5 @@ const Navbar = () => {
     )
 }
 export default Navbar
+// <Link  className={`${location.pathname === "/forminfo" ? "active" : ""}`} id="Home" to="/forminfo">Details</Link> 
+// <Link to="/register" className={`${location.pathname === "/register" ? "active" : ""}`} id="Home">Form</Link> 

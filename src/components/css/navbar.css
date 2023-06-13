@@ -1,31 +1,51 @@
 nav{
     background-color: #3A4750;
-    height:5rem;
+    height: 10vh;
     color: #f9f9f9;
     display: flex;
     justify-content: space-between;
+    width:100vw;
 }
-h1{
-    margin-left: 10rem;
-    font-size: 3rem;
+.logo{
+    display: flex;
+    padding-left: 3rem;
+}
+.icon{
+    width: 13%;
+    height: 60%;
     align-self: center;
+    margin-right: 4%;
+}
+.nav-head{
+    font-size: 7vh;
+    align-self: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 #button{
-    margin-right: 9rem;
-    align-self: flex-end;
+    display: flex;
+    width: 25%;
+    align-items: flex-end;
     font-size: x-large;
 }
-.Login{
-    padding-left: 3rem;
+@media screen and (max-width: 930px){
+    #button{
+        display: none;
+    }
+    .nav-head{
+        font-size: 5vh;
+    }
 }
-.SignUp{
-    padding-left: 3rem;
+.navform{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
-.Login:hover{
+#Login:hover{
     color: rgb(219, 214, 214);
     transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.SignUp:hover{
+#Signup:hover{
     color: rgb(219, 214, 214);
     transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -33,14 +53,9 @@ h1{
     color: rgb(219, 214, 214);
     transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-form{
-    display: inline;
-}
 .active{
+    font-weight: 600;
     color: rgb(219, 214, 214);
-}
-.Logout{
-    padding-left: 3rem;
 }
 .Logout:hover{
     color: rgb(219, 214, 214);

@@ -38,6 +38,10 @@ const FormSchema = new Schema({
     date:{
         type:Date,
         default:Date.now
+    },
+    profile:{
+        type:String,
+        required:true
     }
 
 })

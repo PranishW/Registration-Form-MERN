@@ -13,7 +13,7 @@ import Registration from "./components/Registration";
 import FormState from "./context/Form/FormState";
 import Alerts from "./components/Alerts"
 function App() {
-  const [alert,setAlert] = useState(null);
+  const [alert, setAlert] = useState(null);
   const showAlert = (message, type) => {
     setAlert({
       msg: message,
@@ -28,8 +28,8 @@ function App() {
       <FormState>
         <Router>
           <Navbar />
-          <Alerts alert={alert}/>
           <div className="App">
+            <Alerts alert={alert} />
             <Switch>
               <Route exact path="/">
                 <Home showAlert={showAlert} />

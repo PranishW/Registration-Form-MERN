@@ -1,0 +1,21 @@
+.sidebar{
+    padding-top: 4%;
+    background-color: #3A4750;
+    color: #f9f9f9;
+    width: 20%;
+    font-size: x-large;
+}
+.sidebtn:hover{
+    color: rgb(219, 214, 214);
+    transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-weight: 600;
+    transition: font-weight 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@media screen and (max-width: 930px){
+    .sidebar{
+        display: none;
+    }
+    .sidebtn{
+        display: none;
+    }
+}

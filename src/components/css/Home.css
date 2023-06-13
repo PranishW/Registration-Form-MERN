@@ -1,0 +1,34 @@
+
+h2{
+    font-size: x-large;
+    text-align: center;
+}
+h1{
+    font-size: xx-large;
+    text-align: center;
+}
+.reg{
+    margin-top: 2%;
+    text-align: center;
+    width: 50%;
+}
+.Home{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Note{
+    font-weight: bold;
+    color: red;
+}
+.main{
+    display: flex;
+    height: 100vh;
+}
+@media screen and (max-width: 930px){
+    .reg{
+        font-size: small;
+        width: 90%;
+    }
+}

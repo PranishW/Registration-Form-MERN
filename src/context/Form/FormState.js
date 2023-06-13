@@ -2,8 +2,8 @@ import { useState } from "react";
 import formContext from "./formContext";
 
 const FormState = (props) => {
-    const host = "http://localhost:7000"
-    const formInitial = []
+    const host = "https://eregistrationbackend.onrender.com"
+    const formInitial = {success:true,error:"Fill every field in the form with correct information"}
     const [form, setForm] = useState(formInitial)
     // get form data
     const getForm = async () => {
@@ -19,22 +19,22 @@ const FormState = (props) => {
         setForm(json)
     }
     // fill form
-    const fillForm = async (name, email, age, dob, address, gender, mobno) => {
+    const fillForm = async (formData) => {
         //  API Call
         const response = await fetch(`${host}/api/form/fillform`, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
                 'auth-token': localStorage.getItem('token')
             },
-            body: JSON.stringify({ name, email, age, dob, address, gender, mobno })
+            //body: { name, email, age, dob, address, gender, mobno },
+            body: formData
         });
         // filling form info
         const json = await response.json()
         setForm(json)
     }
     return (
-        <formContext.Provider value={{ form, fillForm,getForm }}>
+        <formContext.Provider value={{ form, fillForm, getForm }}>
             {props.children}
         </formContext.Provider>
     )
