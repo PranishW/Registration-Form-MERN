@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Link, useLocation } from "react-router-dom";
-import './css/navbar.css'
+import './css/navbar.css';
 const Navbar = () => {
     let history = useHistory()
     const handleLogout = () => {

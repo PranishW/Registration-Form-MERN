@@ -14,6 +14,8 @@
 .loghead{
     padding-top: 5rem;
     color: #f9f9f9;
+    font-size: x-large;
+    text-align: center;
 }
 .loginpage
 {
@@ -48,7 +50,7 @@
 .login{
     width: 8rem;
     height: 2rem;
-    background-color: #3A4750;
+    background-color: #3A4750 !important;
     border-radius: 1rem;
     color: #f9f9f9;
 }

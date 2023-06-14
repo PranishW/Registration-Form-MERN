@@ -8,8 +8,8 @@ const Home = () => {
             <Sidebar />
             <Dropdown />
             <div className="Home">
-                <h1>Exam Registration</h1>
-                <h2>Home Page</h2>
+                <h1 className="home1">Exam Registration</h1>
+                <h2 className="home2">Home Page</h2>
                 <p className="reg">
                     Exam Registration Website  (eRegistration) has been established as a exam form filling website. Students interested in appearing for
                     this exam must fill the form to be eligible for the exam.

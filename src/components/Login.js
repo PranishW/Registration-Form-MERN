@@ -9,6 +9,7 @@ const Login = (props) => {
     const [credentials, setCredentials] = useState({ email: "", password: "" })
     const handleSubmit = async (e) => {
         e.preventDefault();
+        props.showAlert("Verifying User Credentials,Please wait......","primary")
         const response = await fetch(`https://eregistrationbackend.onrender.com/api/auth/login`, {
             method: 'POST',
             headers: {

@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import formContext from "../context/Form/formContext";
 import FormItem from "./Formitem";
-import './css/FormDisplay.css'
+import './css/FormDisplay.css';
 import Sidebar from "./Sidebar";
 import ReactToPrint from "react-to-print";
 import { useRef } from "react";

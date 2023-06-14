@@ -12,6 +12,7 @@ const Signup = (props) => {
             props.showAlert("Password in both fields does not match", "warning")
         }
         else {
+            props.showAlert("Verifying User Credentials,Please wait......","primary")
             const response = await fetch(`https://eregistrationbackend.onrender.com/api/auth/createuser`, {
                 method: 'POST',
                 headers: {
